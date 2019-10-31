@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello WebSocket</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/js/moment.min.js"></script>
+    <script src="/app.js"></script>
+    <script src="/libs/moment.min.js"></script>
+    <script src="/libs/Chart.js"></script>
+    <script src="/libs/utils.js"></script>
+
+</head>
+<body>
+<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+    enabled. Please enable
+    Javascript and reload this page!</h2></noscript>
+
+<div id="main-content" class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="connect">WebSocket connection:</label>
+                    <button id="connect" class="btn btn-default" type="submit">Connect</button>
+                    <button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">Disconnect
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div style="width:100%;">
+        <canvas id="canvas"></canvas>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table id="conversation" class="table table-striped">
+                <thead style="margin-bottom: 30px">
+                <tr>
+                    <th style="font-weight: bold; font-size: 26px; color: darkgray;">Metrics:</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <tc>
+                        <th style="font-weight: bold">Parameter</th>
+                    </tc>
+                    <tc>
+                        <th style="font-weight: bold">Value</th>
+                    </tc>
+                    <tc>
+                        <th style="font-weight: bold">Timestamp</th>
+                    </tc>
+                </tr>
+                <tr>
+                    <tc>
+                        <th>ACTIVEPOWER</th>
+                    </tc>
+                    <tc>
+                        <th id="ACTIVEPOWER"></th>
+                    </tc>
+                    <tc>
+                        <th id="ACTIVEPOWER_ts"></th>
+                    </tc>
+                </tr>
+                <tr>
+                    <tc>
+                        <th>POA</th>
+                    </tc>
+                    <tc>
+                        <th id="POA"></th>
+                    </tc>
+                    <tc>
+                        <th id="POA_ts"></th>
+                    </tc>
+                </tr>
+                <tr>
+                    <tc>
+                        <th>VOLTAGE</th>
+                    </tc>
+                    <tc>
+                        <th id="VOLTAGE"></th>
+                    </tc>
+                    <tc>
+                        <th id="VOLTAGE_ts"> </th>
+                    </tc>
+                </tr>
+                <tr>
+                    <tc>
+                        <th>CURRENT</th>
+                    </tc>
+                    <tc>
+                        <th id="CURRENT"></th>
+                    </tc>
+                    <tc>
+                        <th id="CURRENT_ts"></th>
+                    </tc>
+                </tr>
+                </tbody>
+
+<!--                <tbody id="stream">-->
+<!--                </tbody>-->
+            </table>
+        </div>
+    </div>
+    </form>
+</div>
+</body>
+<script src="/chart.js"></script>
+</html>

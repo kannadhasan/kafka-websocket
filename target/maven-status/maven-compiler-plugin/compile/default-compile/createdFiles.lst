@@ -1,0 +1,9 @@
+uk/ac/ebi/KafkaConsumerListener.class
+uk/ac/ebi/streaming/KafkaStreamingMain$MySerde.class
+uk/ac/ebi/WebSocketConfig.class
+uk/ac/ebi/Application.class
+uk/ac/ebi/KafkaConsumerConfig.class
+uk/ac/ebi/produce/KafkaExampleProducer.class
+uk/ac/ebi/streaming/KafkaStreamingStatistics.class
+uk/ac/ebi/streaming/KafkaStreamingMain.class
+uk/ac/ebi/spark/SparkConsume.class

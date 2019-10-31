@@ -1,0 +1,18 @@
+kafka:
+  bootstrapAddress: localhost:9092
+  topic:
+    in: data-in
+    out: data-out
+
+#spring:
+#  kafka:
+#    consumer:
+#      auto-offset-reset: earliest
+
+websocket:
+  messages:
+   in: /dashboard/stream-in
+   out: /dashboard/stream-out
+  broker: /dashboard
+  prefix: /app
+  endpoint: /jdisp-websocket-endpoint
